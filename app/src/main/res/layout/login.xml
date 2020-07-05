@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rect">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/yellowback"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="45sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000000"
+                android:textFontWeight="600"
+                />
+
+            <TextView
+                android:layout_below="@+id/login"
+                android:id="@+id/logindata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please signin to continue"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:textFontWeight="300"
+                />
+
+            <EditText
+                android:layout_below="@+id/logindata"
+                android:id="@+id/emailview"
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:background="@drawable/myrect"
+                android:elevation="6dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:hint="Email"
+                />
+
+            <EditText
+                android:layout_below="@+id/emailview"
+                android:id="@+id/passview"
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:background="@drawable/myrect"
+                android:elevation="6dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:hint="Password"
+                />
+
+            <TextView
+                android:layout_below="@+id/passview"
+                android:id="@+id/forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:textFontWeight="600"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellowback"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/signbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:textFontWeight="800"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp">
+
+            <TextView
+                android:id="@+id/footertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dont have an account?"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:textFontWeight="400"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_toRightOf="@+id/footertext"
+                android:id="@+id/footertext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signup"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:textColor="#000"
+                android:textFontWeight="600"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
